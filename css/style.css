@@ -3,12 +3,16 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
 	line-height: 1.6;
 	color: #3a3a3a;
+}
+
+p:last-child {
+	margin-bottom: 0;
 }
 
 a { 
@@ -23,22 +27,22 @@ a {
 /* ---- Navigation ---- */
 
 .name {
-	margin: 0;
+  margin: 0;
 }
 
 /* ---- Layout Containers ---- */
 
 .container {
-	padding-right: 1em;
-	padding-left: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .main-header {
+	padding: 1.5em 0;
 	background: #3acec2;
-	padding: 1em 0;
 }
 
-.main-footer {
+.main-footer { 
 	text-align: center;
 	padding: 2em 0;
 	background: #d9e4ea;
@@ -50,6 +54,10 @@ a {
 
 @media (min-width: 769px) {
 
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
 	.container {
 		width: 70%;
 		max-width: 1000px;
@@ -57,3 +65,13 @@ a {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
